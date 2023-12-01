@@ -9,5 +9,17 @@
 body{
     background-image:url(../img/Hábitos.jpg);
     background-repeat: no-repeat;
+    background-position: top;
     background-size: 100%;
+}
+.links{
+    font-size: 35px; 
+    color: #02070c;
+    text-decoration: none;
+    background-color: rgba(232, 233, 197, 0.932);
+    border: 5px solid #87d3ad;
+    border-radius: 7px; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
