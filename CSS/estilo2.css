@@ -13,14 +13,6 @@ body{
     text-align: center;
     position: relative;
 }
-.links{
-    font-size: xx-large;
-    left: 1000px;
-    position: absolute;
-    background-color: #a6b7ee;
-    border: 5px solid #87d3ad;
-    border-radius: 7px; 
-}
 .text_intro{
     top: 3px;
     position: relative;
