@@ -47,3 +47,47 @@ body{
     right: 15px;
     position: relative;
 }
+.texto2{
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+.link{
+    left: 500px;
+    position: absolute;
+    background-color: #a6b7ee;
+    border: 5px solid #87d3ad;
+    border-radius: 7px; 
+}
+.imgs_imc img{
+    width: 650px;
+}
+.imgs_imc{
+    top: 52px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto3{
+    font-size: large;
+    left: 0px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+}
+.imgs3 img{
+    height: 400px;
+    width: 400px    ;
+}
+.imgs3{
+    top: 50px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto4{
+    font-size: large;
+    text-align: left;
+    top: 50px;
+    position: relative;
+}
