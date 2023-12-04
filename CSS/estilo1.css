@@ -13,7 +13,6 @@ body{
     background-size: 100%;
 }
 .links{
-<<<<<<< HEAD
     height: 100%;
     display: flex;
     justify-content: center;
@@ -33,21 +32,9 @@ body{
     background-color: #a6b7ee;
     border: 5px solid #87d3ad;
     border-radius: 7px; 
-}
+    }
 .texto{
     top: 55px;
     text-align: center;
     position: absolute;
 }
-=======
-    font-size: 35px; 
-    color: #02070c;
-    text-decoration: none;
-    background-color: rgba(232, 233, 197, 0.932);
-    border: 5px solid #87d3ad;
-    border-radius: 7px; 
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
->>>>>>> d3d9d1e7594e3f234e88f5d1c08f6823069c1b89
