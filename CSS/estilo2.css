@@ -9,3 +9,41 @@
 body{
     background-color: rgba(247, 247, 42, 0.699);
 }
+.titulo_principal{
+    text-align: center;
+    position: relative;
+}
+.text_intro{
+    top: 3px;
+    position: relative;
+}
+.texto1{
+    font-size: 15px;
+    text-align: center;
+}
+.texto1_1{
+    font-size: 15px;
+    text-align: center
+}
+.imagens{
+    top: 10px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.imagens img{
+    width: 430px;
+    height: 385px;
+}
+.imagem1{
+    left: 10px;
+    position: relative;
+}
+.imagem2{
+    right: 10px;
+    position: relative;
+}
+.imagem3{
+    right: 15px;
+    position: relative;
+}
