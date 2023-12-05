@@ -52,6 +52,21 @@ body{
     text-align: center;
     position: relative;
 }
+.link_github img{
+    width: 90px;
+    height: 90px;
+}
+.link_github{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 335px;
+    top: 12px;
+}
+.link_pág1{
+    text-align: center;
+    letter-spacing: 8px;
+}
 .link{
     left: 500px;
     position: absolute;
@@ -73,14 +88,14 @@ body{
     left: 0px;
     text-align: left;
     position: relative;
-    top: 50px;
+    top: 5px;
 }
 .imgs3 img{
     height: 400px;
     width: 400px    ;
 }
 .imgs3{
-    top: 50px;
+    top: 35px;
     position: relative;
     display: flex;
     justify-content:space-between;
@@ -88,6 +103,142 @@ body{
 .texto4{
     font-size: large;
     text-align: left;
-    top: 50px;
+    top: 5px;
     position: relative;
+}
+.imgs4 img{
+    width: 620px;
+    height: 470px;
+}
+.imgs4{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto5{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs5 img{
+    width: 650px;
+    height: 470px;
+}
+.imgs5{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto6{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs6 img{
+    width: 650px;
+    height: 470px;
+}
+.imgs6{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto7{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs7 img{
+    width: 650px;
+    height: 470px;
+}
+.imgs7{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto8{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs8 img{
+    width: 670px;
+    height: 470px;
+}
+.imgs8{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto9{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs9 img{
+    width: 660px;
+    height: 470px;
+}
+.imgs9{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.texto10{
+    font-size: large;
+    text-align: left;
+    top: 5px;
+    position: relative;
+}
+.imgs10 img{
+    width: 660px;
+    height: 470px;
+}
+.imgs10{
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+.introdução{
+    background-color: rgb(228, 187, 134);
+}
+.intro_imc{
+    background-color: rgb(148, 99, 60);
+}
+.criança_obesa{
+    background-color: rgb(219, 157, 120);
+}
+.criança_magra{
+    background-color: rgb(183, 189, 77);
+}
+.adolescente_obeso{
+    background-color: rgb(209, 165, 107);
+}
+.adolescente_magro{
+    background-color: rgb(201, 245, 171);
+}
+.adulto_obeso{
+    background-color: rgb(112, 187, 112);
+}
+.adulto_magro{
+    background-color: rgb(149, 219, 209);
+}
+.idoso_obeso{
+    background-color: rgb(113, 122, 226);
+}
+.idoso_magro{
+    background-color: rgb(78, 90, 110);
 }
