@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculadora</title>
-    <script src="../script/script3.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #dados {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #dados img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    #dados p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    #resultado h2 {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
+
+  <h1>Calculadora de IMC e Saúde</h1>
+
+  <label for="idade">Idade:</label>
+  <input type="number" id="idade" placeholder="Insira sua idade">
+
+  <label for="peso">Peso (kg):</label>
+  <input type="number" id="peso" placeholder="Insira seu peso" step="0.1">
+
+  <label for="altura">Altura (m):</label>
+  <input type="number" id="altura" placeholder="Insira sua altura" step="0.01">
+
+  <button onclick="calcularIMC()">Calcular IMC</button>
+
+  <h2>Resultado:</h2>
+  <div id="dados"></div>
+  <p id="resultado"></p>
+
+  <script>
+    const calcularIMC = () => {
+      let resultado;
+      let imc;
+      let img;
+      let tipo;
+      const dadosDoUsuario = document.getElementById('dados');
+      const resultadoFinal = document.getElementById('resultado');
+      const idade = document.getElementById('idade').value;
+      const peso = document.getElementById('peso').value;
+      const altura = document.getElementById('altura').value;
     
+      resultado = peso / altura ** 2;
+
+      if (!resultado) {
+        resultadoFinal.innerHTML = `<h2>Valor incorreto</h2>`;
+      } else {
+        if (idade < 60) {
+          tipo = 'Adulto';
+          if (resultado < 18.5) {
+            imc = 'Baixo Peso';
+            img = 'abaixo do peso.png';
+          } else if (resultado >= 18.5 && resultado <= 24.5) {
+            imc = 'Peso Normal';
+            img = 'peso normal.png';
+          } else if (resultado >= 25 && resultado <= 29.9) {
+            imc = 'Excesso de Peso';
+            img = 'acima do peso.png';
+          } else if (resultado >= 30 && resultado <= 34.9) {
+            imc = 'Obesidade de Classe 1';
+            img = 'obeso.png';
+          } else if (resultado >= 35 && resultado <= 39.9) {
+            imc = 'Obesidade de Classe 2';
+            img = 'obesidade 2.png';
+          } else if (resultado >= 40) {
+            imc = 'Obesidade de Classe 4';
+            img = 'obesidade 2.png';
+          }
+        } else if (idade >= 60) {
+          tipo = 'Idoso';
+          if (resultado <= 22) {
+            imc = 'Baixo Peso';
+            img = 'abaixo do peso.png';
+          } else if (resultado > 22 && resultado < 27) {
+            imc = 'Adequado ou eutotrófico';
+            img = 'peso normal.png';
+          } else if (resultado >= 27) {
+            imc = 'Sobrepeso';
+            img = 'acima do peso.png';
+          }
+        }
+
+        dadosDoUsuario.innerHTML = `
+        <div class="main-calccontainer-esquerdo-dados-img">
+          <img src="../img/${img}" alt="">
+        </div>
+        <div class="main-calccontainer-esquerdo-dados-texto">
+          <p><span>Sua idade é: </span> ${idade}</p>
+          <p><span>Você é: </span> ${tipo}</p>
+          <p><span>Sua altura é de: </span> ${altura}m</p>
+          <p><span>Seu peso é de: </span> ${peso}Kg</p>
+          <p><span>Seu IMC é: </span> ${resultado.toFixed(2)}</p>
+          <p><span>Sua classificação é: </span> ${imc}</p>
+        </div>
+        `;
+        resultadoFinal.innerHTML = `<h2>${resultado.toFixed(2)}</h2>`;
+      }
+    }
+  </script>
+
 </body>
 </html>
